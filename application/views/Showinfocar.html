@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ShowInfoCar</title>
+</head>
+<body>
+
+<table>
+	<?php  
+		foreach ($car as $row) 
+		{
+	?>
+			<tr>
+				<td>
+					<?php echo $row->Name;?>
+				</td>
+				<td>
+					<?php echo $row->name_car;?>
+				</td>
+				<td>
+					<?php echo $row->id_car ;?>
+				</td>
+				<td>
+					<?php echo $row->gps_latitude_car;?>
+				</td>
+				<td>
+					<?php echo $row->gps_longitude_car;?>
+				</td>
+				<td>
+					<?php echo $row->id_user;?>
+				</td>				
+			</tr>	
+	<?php 	
+		}
+	?>
+</table>
+
+</body>
+</html>
